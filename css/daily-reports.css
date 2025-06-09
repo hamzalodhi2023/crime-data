@@ -120,6 +120,6 @@ body a {
 }
 
 .report-card a:hover {
-  background-color: #e4f1db;
+  background-color: rgb(224, 224, 224);
   cursor: pointer;
 }
