@@ -159,9 +159,8 @@ body a {
   transition: background 0.2s;
   border-radius: 4px;
 }
-
 .report-card a:hover {
-  background-color: #e4f1db;
+  background-color: rgb(224, 224, 224);
 }
 
 /* Responsive */
