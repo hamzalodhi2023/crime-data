@@ -5,8 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
   if (loginForm) {
     loginForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      // Add your authentication logic here
-      window.location.href = "home.html";
+
+      if (
+        e.target.querySelector("input[name='user']").value !== "data-digpsz" &&
+        e.target.querySelector("input[name='password']").value !==
+          "$data@digpsz"
+      ) {
+        alert("Invalid credentials");
+        return;
+      }
+
+      if (
+        e.target.querySelector("input[name='user']").value === "data-digpsz" &&
+        e.target.querySelector("input[name='password']").value ===
+          "$data@digpsz"
+      ) {
+        // Redirect to the dashboard
+        window.location.href = "/html/home.html";
+      }
     });
   }
 
