@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (signOutBtn) {
     signOutBtn.addEventListener("click", function () {
       // Add your sign out logic here
-      window.location.href = "index.html";
+      window.location.href = "/index.html";
     });
   }
 
